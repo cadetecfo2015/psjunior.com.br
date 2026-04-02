@@ -1,1 +1,1 @@
-# psjunior.blog.br
+# psjunior.com.br
