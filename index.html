@@ -617,16 +617,17 @@
           <a href="mailto:paulonanuque@yahoo.com.br">paulonanuque@yahoo.com.br</a>
         </div>
         <div class="notice">
-          Formulário preparado para Netlify Forms. Depois de publicar, ative a notificação por e-mail no painel da Netlify para receber as mensagens em paulonanuque@yahoo.com.br.
+          Formulário conectado para envio por e-mail.
         </div>
       </div>
 
       <div class="contact-card reveal">
-        <form name="contato" method="POST" action="/mensagem-enviada.html" data-netlify="true" netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contato" />
-          <p hidden>
-            <label>Não preencha este campo se você é humano: <input name="bot-field" /></label>
-          </p>
+        <form action="https://formsubmit.co/paulonanuque@yahoo.com.br" method="POST">
+          <input type="hidden" name="_subject" value="Nova mensagem recebida pelo site P.S. Junior" />
+          <input type="hidden" name="_next" value="https://www.psjunior.blog.br/mensagem-enviada.html" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="form-group">
             <label for="nome">Nome</label>
             <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
